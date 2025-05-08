@@ -47,7 +47,7 @@ window.onload = () => {
       objectType: "feed",
       content: {
         title: "재철 ♥ 세리의 모바일 청첩장",
-        description: "2025년 5월 25일 일요일♡",
+        description: "2025년 6월 14일 토요일♡",
         imageUrl: "https://i.imgur.com/KV98idM.png",
         imageWidth: 1200,
         imageHeight: 630,
