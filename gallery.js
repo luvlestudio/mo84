@@ -84,22 +84,22 @@ window.onload = () => {
   //   window.open(`http://www.facebook.com/sharer/sharer.php?u=${pageUrl}`);
   // });
 
-  // const swiper = new Swiper(".swiper-container", {
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
+  const swiper = new Swiper(".swiper-container", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
   const documentBody = document.querySelector("body");
 
-  // const outsideModal = document.querySelector(".swiper");
-  // outsideModal.addEventListener("click", function (event) {
-  //   if (event.target.classList.contains("swiper-slide")) {
-  //     outsideModal.style.display = "none";
-  //     documentBody.style.overflow = "auto";
-  //   }
-  // });
+  const outsideModal = document.querySelector(".swiper");
+  outsideModal.addEventListener("click", function (event) {
+    if (event.target.classList.contains("swiper-slide")) {
+      outsideModal.style.display = "none";
+      documentBody.style.overflow = "auto";
+    }
+  });
 
   const galleryImages = document.querySelectorAll("#gallery img");
   galleryImages.forEach((img, index) => {
